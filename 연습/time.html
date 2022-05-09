@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert alert-danger">
+        <span id="num">5</span>초 이내 구매시 사은품 증정
+      </div>
+</body>
+</html>
+<script>
+    var count = 5;
+
+    setInterval(function(){
+        count -= 1;
+        if(count >= 0){
+            document.querySelector("#num").innerHTML = count;
+        }
+    },1000);
+
+    if(count == '0'){
+        document.querySelector(".alert-danger").style.display = 'none';
+    };
+</script>
+<script>
+    $('form').on('submit', function(e){
+        var 입력한값 = document.getElementById('pass').value;
+
+        if (입력한값 == ''){
+            alert('비번입력');
+        }else if(/[A-Z]/.test(입력한값)){
+            alert('안에 대문자');
+        }//안에 대문자가있는지
+    });
+
+    $('form').on('submit', function(e){
+        var 입력한값 = document.getElementById('pass').value;
+       
+        if (입력한값 == ''){
+            alert('비번입력');
+        }else if(/[A-Z]/.test(입력한값) == false){
+            alert('안에 대문자 넣어주세요')
+        }
+    });
+</script>
+<script>
+    console.log(vat(90,1000));
+    console.log(vat(130,1000));
+
+    function vat(a){
+        var num  = (a * 1000)
+        return num;
+    }
+</script>
+<script>
+    console.log(rr(600,true));
+
+    function rr(a,b){
+
+        var rr =  a - a * 0.1;
+        if(b == true){
+            rr = rr - 1.5;
+        }
+        return rr;
+    }
+</script>

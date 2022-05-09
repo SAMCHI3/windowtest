@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert-box" id="box">
+        <p id="title">알림창임</p><button onclick="cclose()">닫기</button>
+    </div>
+    <button id="oopen">버튼3</button>
+    <button onclick="openbox()">버튼1</button>
+    <button onclick="closebox()">버튼2</button>
+    <p>태조 이성계가 태어난 년도는?</p>
+    <input type="text" id="answer">
+    <button id="send-answer">제출</button>
+    <script>
+
+    var count = 0;
+        document.getElementById("send-answer").addEventListener("click", function(){
+            count += 1;
+            var a=document.getElementById("answer").value;
+            if(a == '1335'){
+                alert('정답');
+            }else if(count >= '3' && a == false){
+                alert('멍청이');
+            }
+        });
+    </script>
+    <script>
+        function openbox(){
+            document.getElementById('title').innerHTML= '아이디입력하셈';
+            document.getElementById('box').style.display= 'block';
+        }
+
+        function closebox(){
+            document.getElementById('title').innerHTML= '비번입력하셈';
+            document.getElementById('box').style.display= 'block';
+        }
+
+        function cclose(){
+            document.getElementById('box').style.display='none';
+        }
+
+        document.getElementById('oopen').addEventListener('mouseover', function(){
+            document.getElementById('box').style.display='block';
+        });
+    </script>
+    <script>
+        function 삼육구(n){
+            if( n % 9 == 0){
+                console.log('박수2');
+            }else if( n % 3 == 0){
+                console.log('박수');    
+            }else{
+                console.log('통과')
+            }
+        }
+        console.log(삼육구(27));
+    </script>
+    <script>
+        function 합격했냐( a, b ){
+            if( a < 40 || b < 40){
+                console.log('불합격');
+            }else if( a + b >= 120){
+                console.log('합격');
+            }else if( a + b < 120){
+                console.log('불합격');
+            }
+        }
+        console.log(합격했냐(100, 45));
+    </script>
+     <script>
+         var 예금액 = 60000;
+         var 미래예금액 = 0;
+
+         
+            if( 예금액 >= 60000){
+                미래예금액 = 예금액 *1.2 *1.2;
+            }else{
+                미래예금액 = 예금액 *1.15 *1.15;
+            }
+         console.log(미래예금액)
+     </script>
+    <script>
+        var first = 400;
+        count = 0;
+        count = first + first * 2/3 + first * 2/3 * 2/3;
+        console.log(count);
+    </script>
+    <!-- <script>
+        function closebox(){
+            document.getElementById('box').style.display='none';
+        }
+    </script> -->
+</body>
+</html>

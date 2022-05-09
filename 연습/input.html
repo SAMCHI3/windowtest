@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body class="a">
+    <span class="badge bg-dark">Dark 🔄</span>
+    <p>태조 이성계가 태어난 년도는?</p>
+<input type="text" id="answer">
+<button id="send-answer">제출</button>
+<div class="alert alert-danger">
+    5초 이내 구매시 사은품 증정
+  </div>
+</body>
+</html>
+<script>
+    var count = 0;
+    document.querySelector('#send-answer').addEventListener('click', function(){
+        count += 1;
+        var user = document.querySelector('#answer').value;
+        if(user == '1335'){
+            alert('성공')
+        }else if(count >= 3 && user != '1335'){
+            alert('멍청이')
+        };
+    });
+  
+  </script>
+<script>
+    var count = 0;
+
+    $('.badge').on('click', function(){
+        count = count + 1;
+        if(count %2 == 1 ){
+        $('.badge').html('Light🔄');  
+    }else{
+        $('.badge').html('Dark 🔄');
+    };
+    });
+    
+    $('.badge').on('click', function(){
+        if(count %2 == 1){
+            $('.a').addClass('.white');
+        }else {
+            $('.a').addClass('.black');
+        };
+    });
+</script>
+<script>
+    var a = 90000;
+    var aa = 0;
+    if(a >= 50000){
+        aa = a * 1.20 * 1.20;
+    }else {
+        aa = a * 1.15 * 1.15;
+    }
+    
+    console.log(aa);
+</script>
+
+
+
+
+<script>
+function 삼육구게임(num){
+    if(num % 9 == 0){
+        console.log("박수2")
+    }else if(num % 3 == 0){
+        console.log("박수")
+    }else {
+        console.log("통과");
+    }
+}
+
+삼육구게임(5);
+</script>
+<script>
+    function 합격했냐(a,b){
+        if (a  <50 || b < 50){
+            console.log("과락")
+        }else if(a + b > 120){
+            console.log("합격")
+        }else{
+            console.log("불합격")
+        }
+    }
+
+    합격했냐(50,50);
+</script>
+<script>
+    var first = 360;
+    var total = 0;
+    if(total = first + first * 2/3 + first * 2/3 * 2/3);
+
+    console.log(total);
+</script>
+<script>
+    setInterval(function(){
+        console.log('안녕')
+        }, 2000);
+</script>
