@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.mapper.LikesMapper">
+	<insert id="lpinsert">
+		insert into likes(lid,lmodel,lpcnt)
+		values(#{lid},#{lmodel},#{lpcnt})
+	</insert>
+	
+    <update id="lpupdate">
+    	update likes set lpcnt=#{lpcnt}
+    	where lno=#{lno} and lmodel=#{lmodel}
+    </update>
+    
+     <update id="lpupdate1">
+    	update likes set lpcnt=#{lpcnt}
+    	where lno=#{lno} and lmodel=#{lmodel}
+    	
+    </update>
+   
+</mapper>
