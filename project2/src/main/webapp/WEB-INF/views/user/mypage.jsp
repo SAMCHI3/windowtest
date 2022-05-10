@@ -78,8 +78,9 @@
 							<div class="tr2">판매모델:{{pmodel}}</div>
 							<div class="tr2">판매금액:<strong>{{ssell}}원</strong></div>
 							<div class="tr2">판매일:{{sdate}}</div>
-							<h4>판매완료<h4>
+							
 						</div>
+						<div class="tr2 tr3">{{dis ing}} {{dis1 sout}}</div>
 					</div>
 				{{/each}}
 				</script>
@@ -123,8 +124,9 @@
 										<div class="tr2">구매모델:{{pmodel}}</div>
 										<div class="tr2">입찰구매금액:<strong>{{bprice}}원</strong></div>
 										<div class="tr2">입찰구매일:{{bdate}}</div>
-										<h4>입찰구매완료</h4>
+											
 										</div>
+											<div class="tr2 tr3">{{dis ing}} {{dis1 bout}}</div>
 										</div>
 									{{/each}}
 			</script>
@@ -133,6 +135,28 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+        <Script>
+		Handlebars.registerHelper("dis", function(ing){
+	        if(ing==3) return "즉시판매";
+	        else return "입찰판매";
+	      });
+		
+		Handlebars.registerHelper("dis1", function(sout){
+	        if(sout==0) return "판매중";
+	        else return "판매완료";
+	      });
+	</Script>
+        <Script>
+		Handlebars.registerHelper("dis", function(ing){
+	        if(ing==1) return "즉시구매";
+	        else return "입찰구매";
+	      });
+		
+		Handlebars.registerHelper("dis1", function(bout){
+	        if(bout==0) return "구매중";
+	        else return "구매완료";
+	      });
+	</Script>
 <script>
 	var page="1";
 	var uid="${vo.uid}";

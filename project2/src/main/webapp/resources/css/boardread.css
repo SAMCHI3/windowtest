@@ -49,3 +49,52 @@ form {
     margin: 30px;
     display:inline-block;
 }
+.replies img{
+	height: 50px; 
+	width: 50px; 
+	border-radius: 50px;
+}
+.replies span{
+	padding-left: 8rem;
+	font-size: 20px;
+}
+.rcontent{
+	margin:5px;
+	border: none;
+    height: 40px;
+}
+.rcontent:focus {
+  outline: none;
+}
+.rbutton{
+	text-align:right;
+	padding-right:20px;
+}
+.rbutton button{
+	border: none;
+    background: none;
+    font-weight: bold;
+}
+#cke_editor{
+	border-radius: 15px;
+	border:none;
+}
+#cke_1_top{
+	border-radius: 15px;
+}
+#cke_1_bottom{
+	border-radius: 15px;
+}
+#insert{
+	float: right;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    background: none;
+    font-weight: bold;
+}
+.form1{
+	background: #E4E7EA;
+}

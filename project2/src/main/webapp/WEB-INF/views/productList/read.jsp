@@ -14,7 +14,7 @@
    			</div>
 			<div class="image">
 				<c:if test="${uid==null}">
-					<img src="/display?fileName=${vo1.pimage}">
+					<img src="/display?fileName=${vo.pimage}">
 				</c:if>
 				<c:if test="${uid!=null}">
 					<img src="/display?fileName=${vo.pimage}">
@@ -41,9 +41,9 @@
 				</form>
 				<div style="display="inline-block;">
 				<c:if test="${uid==null}">
-					<h2>${vo1.pbrand}</h1>
-					<h5>${vo1.pename}</h3>
-					<h5>${vo1.pkname}</h3>
+					<h2>${vo.pbrand}</h1>
+					<h5>${vo.pename}</h3>
+					<h5>${vo.pkname}</h3>
 				</c:if>
 				<c:if test="${uid!=null}">
 					<h2>${vo.pbrand}</h1>
@@ -87,7 +87,7 @@
 			<div class="price">
 				<div>
 				<c:if test="${uid==null}">
-					최근거래가<h4>${vo1.plprice}</h4>
+					최근거래가<h4>${vo.plprice}</h4>
 				</c:if>
 				<c:if test="${uid!=null}">
 					최근거래가<h4>${vo.plprice}</h4>
@@ -102,7 +102,7 @@
 				<h4>모델명</h4>
 				<h3 class="pmodel">
 				<c:if test="${uid==null}">
-					${vo1.pmodel}
+					${vo.pmodel}
 				</c:if>
 				<c:if test="${uid!=null}">
 					${vo.pmodel}

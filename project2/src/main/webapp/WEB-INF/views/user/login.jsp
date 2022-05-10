@@ -11,7 +11,7 @@
 				</div>
 				<div class="login-center">
 						<h5>아이디</h5>
-						<input type="text" name="uid" placeholder="예) kream@naver.com" class="login-input">
+						<input type="text" name="uid" placeholder="예) likeit@naver.com" class="login-input">
 					<hr><br>
 						<h5>비밀번호</h5>
 						<input type="password" name="upass" class="login-input">
@@ -29,7 +29,8 @@
 							<p class="button-bottom3">회원가입</p></a>
 						</div>
 						<div>
-							<p class="button-bottom4"><a class="post" href="/user/passupdate">비밀번호 재발급</a><p>
+							<a class="post" href="/user/passupdate">
+							<p class="button-bottom4">비밀번호 재발급</p></a>
 						</div>
 					</div>
 					<div class="login-api"><a href="https://kauth.kakao.com/oauth/authorize?client_id=875fa1f5aba0b0cb1bf90f42f47f4dc3&redirect_uri=http://localhost:8088/user/kakao/login&response_type=code">

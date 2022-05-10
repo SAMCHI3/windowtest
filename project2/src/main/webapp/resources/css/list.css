@@ -110,6 +110,7 @@ a{
 	width: 300px;
     height: 50px;
     float: right;
+    opacity: 0;
     visibility: hidden;
 
 }
@@ -126,6 +127,8 @@ a{
     z-index: 5;
     padding: 30px;
     top: 5px;
+    opacity: 1;
+    transition: all 1s;
     text-align: center;
 }
 #search{
@@ -165,7 +168,7 @@ a{
 	border-radius:15px;
 	width:50px;
 	height:40px;
-	border:2px solid lightgray;
+	border:1px solid black;
 }
 #tbl{
 	overflow:hidden;
