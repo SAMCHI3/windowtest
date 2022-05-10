@@ -1,23 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <style>
-    #tbl{overflow:hidden; width:900px; margin:0px auto;}
-    .box {float:left; width:250px; height:300px; margin-left:10px; padding:5px;
-		border:1px solid gray;}
-	.box img { width:150px; height:200; position: relative; left: 40px;}
-    </style>
+    <link rel="stylesheet" href="/resources/css/boardlist.css">
 <div id="page">
-
-	<h1 >게시판</h1>
+<div class="container">
+	<h1 >나만의 STYLE</h1>
 	<table id="tbl"></table>
 	<script id="temp" type="text/x-handlebars-template">
-		<div style="text-align: center; padding: 20px;">
-			<button type="button"><a href="/board/top">인기</a></button>
-			<button type="button"><a href="/board/list">최신</a></button>
+		<div class="board-button2">
+			<button><a href="/board/insert">글쓰기</a></button>
 		</div>
-		<div style="text-align: right;">
-			<button><a href="/board/insert">글쓰기</a><button>
+		<div class="board-button">
+			<button class="famous" type="button"><a href="/board/top">인기</a></button>
+			<button class="new" type="button"><a href="/board/list">최신</a></button>
 		</div>
+		
 		<div>
 		{{#each top}}
 				<div class="box">
@@ -25,13 +21,13 @@
 				<div class="img"><img src="/display?fileName={{bimage}}"></div>
 				<div class="bid">{{bid}}</div>
 				<div>{{bcontent}}</div>
-				<div><button>관심</button>{{bcount}}</div>
+				<div class="imote"><button>❤️</button>{{bcount}}</div>
 				</div>
 		{{/each}}
 	</script>
 <div class="pagination"></div>
 </div>
-
+</div>
 <script>
  	var page=1;
  	

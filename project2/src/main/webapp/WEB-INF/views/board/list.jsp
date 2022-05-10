@@ -11,8 +11,8 @@
 			<button><a href="/board/insert">글쓰기</a></button>
 		</div>
 		<div class="board-button">
-			<button class="famous" type="button">인기</button>
-			<button class="new" type="button">최신</button>
+			<button class="famous" type="button"><a href="/board/top">인기</a></button>
+			<button class="new" type="button"><a href="/board/list">최신</a></button>
 		</div>
 		
 		<div>
@@ -32,28 +32,6 @@
 <script>
  	var page=1;
  	var keyword="";
- 	
- 	$("#tbl").on("click",".top",function(){
- 		getTop();
- 		function getTop(){
- 		$.ajax({
-			type:"get",
-			url:"/board/top.json",
-			data:{page:page,keyword:keyword},
-			dataType:"json",
-			success:function(data){
-				var template = Handlebars.compile($("#temp").html());
-				$("#tbl").html(template(data));
-				$(".pagination").html(getPagination(data));
-				}
-			})
- 		}
-	$(".pagination").on("click","a",function(e){
-		e.preventDefault();
-		page=$(this).attr("href");
-		getTop();
-		})
- 	})
  	
  	
  	$("#tbl").on("click",".img",function(){

@@ -23,19 +23,7 @@
             </ul>
 	</div>
 	<div class="trade">
-		<div class="d-flex p-3 my-profile">
-			<div class="flex-shrink-0">
-				<img src="/display?fileName=${vo.uimage}" style="width: 150px; height: 150px; border-radius: 12px;">
-			</div>
-			<div class="flex-grow-1 ms-3 mt-1">
-				<h4 class="fw-bold mb-0">${vo.uid}</h4>
-				<div class="tr1">${vo.uemail}</div>
-				<div class="tr1">${vo.utel}</div>
-				<div class="profile-link">
-                 			<a href="profile.html">프로필 수정</a>
-             			</div>
-			</div>
-		</div>
+		
 	<div>
 		<div class="buy">
 					<div class="purchase-ui">

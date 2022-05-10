@@ -15,7 +15,7 @@
 	      
 	         <tr>
 	         <td width="100" class="title">작성자</td>
-	         	<td><input class="form-control" type="text" name="bid" value="<c:out value='${uid}'/>"readonly="readonly"></td>
+	         	<td><input class="form-control" type="text" name="bid" value="${uid}"readonly="readonly"></td>
 	         </tr>
 	         <tr>
 	            <td width="100" class="title">이미지</td>

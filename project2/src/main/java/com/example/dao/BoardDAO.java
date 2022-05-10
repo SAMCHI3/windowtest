@@ -10,7 +10,7 @@ public interface BoardDAO {
 	public int count(Criteria cri);
 	public BoardVO read(int bno);
 	public void insert(BoardVO vo);
-	public BoardVO top(Criteria cri);
+	public List<BoardVO> top(Criteria cri);
 	public List<BoardVO> list1(String bid);
 	public void update(BoardVO vo);
 	public void delete(int bno);

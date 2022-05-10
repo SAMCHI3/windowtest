@@ -89,6 +89,17 @@
     border-radius: 20px;
     border: 1px solid gray;
     box-shadow: 2px 1px 1px 1px lightgrey;
+}.select #buy1{
+	margin: 30px;
+    width: 200px;
+    height: 70px;
+    font-size: 23px;
+    font-weight:bold;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid gray;
+    box-shadow: 2px 1px 1px 1px lightgrey;
 }
 .select #cancel{
 	margin: 30px;

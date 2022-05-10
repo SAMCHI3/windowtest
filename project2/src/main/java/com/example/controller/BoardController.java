@@ -112,6 +112,12 @@ public class BoardController {
 		return "/home";
 	}
 	
+	@RequestMapping("/top")
+	   public String top(Model model){
+	      model.addAttribute("pageName","board/top.jsp");
+	      return "/home";
+	}
+	
 	@RequestMapping("/list.json")
 	@ResponseBody
 	public HashMap<String, Object> listJson(Criteria cri){

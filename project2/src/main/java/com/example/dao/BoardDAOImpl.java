@@ -41,8 +41,8 @@ public class BoardDAOImpl implements BoardDAO{
 	}
 
 	@Override
-	public BoardVO top(Criteria cri) {
-		return session.selectOne(namespace+".top",cri);
+	   public List<BoardVO> top(Criteria cri) {
+	      return session.selectList(namespace+".top",cri);
 	}
 
 	@Override

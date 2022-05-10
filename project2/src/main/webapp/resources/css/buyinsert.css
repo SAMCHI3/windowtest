@@ -17,7 +17,7 @@
     padding: 30px;
     top: 100px;
     width: 700;
-    height: 450px;
+    height: 400px;
     margin: 0px auto;
     background: white;
     border-radius: 20px;
@@ -57,7 +57,7 @@
     padding: 30px;
     top: 150px;
     width: 700px;
-    height: 450px;
+    height: 380px;
     margin: auto;
     background: white;
     border-radius: 20px;
@@ -130,7 +130,7 @@ table button{
 .buy-button{
 	position: relative;
     display: inline-block;
-    top: 70px;
+    left: 110px;
 }
 .buy-button button:nth-of-type(1){
 	margin: 30px;
@@ -138,10 +138,10 @@ table button{
     height: 70px;
     font-size: 23px;
     font-weight:bold;
-    background: black;
+    background: #FF7F50;
     color: white;
     border-radius: 20px;
-    border: 1px solid gray;
+    border: 1px solid white;
     box-shadow: 2px 1px 1px 1px lightgrey;
 }
 .buy-button button:nth-of-type(2){
@@ -189,4 +189,10 @@ table button{
 .sbuy:hover{
 	background:#FF7F50;
 	color:white;
+}
+select{
+	width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
 }
